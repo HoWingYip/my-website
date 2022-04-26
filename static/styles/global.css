@@ -110,6 +110,16 @@ a::after {
   transition: width 0.2s;
 }
 
+a[target="_blank"] > span {
+  display: inline-flex;
+  align-items: center;
+}
+a[target="_blank"] > span::after {
+  content: "open_in_new";
+  margin-left: 4px;
+  font-family: "Material Icons";
+}
+
 #introduction {
   /* display: flex; */
   /* gap: 32px; */

@@ -125,16 +125,6 @@ h2::after {
   margin: 0 0 10px;
 }
 
-.project-links > a > span {
-  display: inline-flex;
-  align-items: center;
-}
-.project-links > a > span::after {
-  content: "open_in_new";
-  margin-left: 4px;
-  font-family: "Material Icons";
-}
-
 .project-description > p {
   margin: 0;
 }
