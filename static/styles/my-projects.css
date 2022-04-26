@@ -1,0 +1,140 @@
+h2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+h2::after {
+  content: "";
+  /* position: absolute; */
+  /* top: 50%; */
+  transform: translateY(-50%);
+  /* width: 100%; */
+  flex: 1 1;
+  height: 1px;
+  margin-left: 10px;
+  background-color: #fff;
+}
+
+.timeline {
+  /* display: flex; */
+  /* height: 1000px; */
+}
+
+.timeline-labels {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  /* width: 20%; */
+  height: 100%;
+  /* width: 3px; */
+  /* background-color: rgba(255, 255, 255, 0.3); */
+}
+.timeline-labels::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.timeline-label-wrapper {
+  position: relative;
+  display: flex;
+  /* display: flex;
+  align-items: center; */
+  margin-left: auto;
+  margin-right: 3px;
+  flex: 1 0;
+}
+/* .timeline-labels > span::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+} */
+
+.timeline-label {
+  position: relative;
+}
+
+.timeline-label::after {
+  content: "";
+  position: absolute;
+  right: -3px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.timeline-label > span {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.timeline-label > span::after {
+  content: "";
+  width: 10px;
+  height: 3px;
+  margin-left: 7px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.timeline-content {
+  margin-left: 20px;
+}
+.timeline-label-wrapper:not(:last-child) > .timeline-content {
+  margin-bottom: 30px;
+}
+
+.timeline-content > :first-child {
+  margin-top: 0;
+}
+
+.timeline-content > p:last-child {
+  margin-bottom: 0;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project {
+  /* width: 50%; */
+  margin-top: 5px;
+  padding: 20px;
+  background-color: #555;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project-logo {
+  width: 100px;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.project-name {
+  margin: 0 0 10px;
+}
+
+.project-links > a > span {
+  display: inline-flex;
+  align-items: center;
+}
+.project-links > a > span::after {
+  content: "open_in_new";
+  margin-left: 4px;
+  font-family: "Material Icons";
+}
+
+.project-description > p {
+  margin: 0;
+}
